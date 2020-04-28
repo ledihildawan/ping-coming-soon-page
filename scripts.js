@@ -45,6 +45,8 @@
           showError(email, 'Please provide a valid email address');
         } else {
           removeError(email);
+
+          window.location.href = window.location.origin
         }
       }
     })
