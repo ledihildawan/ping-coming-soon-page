@@ -1,0 +1,85 @@
+@import "variables";
+@import "reset";
+
+// General
+html {
+  font-size: 125%;
+}
+
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8.5rem 2.75rem 3.5rem;
+  color: $clr-text;
+  font-family: $font-sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding: 4.5rem 0 3.5rem;
+  }
+}
+
+.main-header {
+  margin-bottom: 4.5rem;
+}
+
+.main-footer {
+  margin-top: 12rem;
+}
+
+.title {
+  margin-bottom: 2.25rem;
+  color: $clr-grey;
+  font-size: 1.7rem;
+  font-weight: 300;
+
+  span {
+    color: $clr-text;
+    font-weight: 600;
+  }
+}
+
+.text {
+  margin-bottom: 3.25rem;
+}
+
+.copyright {
+  color: $clr-grey;
+}
+
+// Components
+@import "form";
+@import "logo";
+@import "social-media";
+@import "button";
+
+// Helpers
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+
+  &-focusable {
+    &:active,
+    &:focus {
+      clip: auto !important;
+      -webkit-clip-path: none !important;
+      clip-path: none !important;
+      height: auto !important;
+      margin: auto !important;
+      overflow: visible !important;
+      width: auto !important;
+      white-space: normal !important;
+    }
+  }
+}

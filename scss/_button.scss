@@ -1,0 +1,36 @@
+.btn {
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 1.5rem;
+  background: #fff;
+  color: $clr-text;
+  font-family: -system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (min-width: 992px) {
+    padding: 1rem;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  border-radius: 2rem;
+  background-color: $clr-primary;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba($clr-primary, 0.38);
+  transition: box-shadow 0.25s ease-in-out;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 4px 16px rgba($clr-primary, 0.87);
+  }
+}

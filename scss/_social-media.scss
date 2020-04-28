@@ -1,0 +1,33 @@
+$border-color: #e8ebf4;
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3rem !important;
+}
+
+.social-media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 1.25rem;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  line-height: 0;
+
+  &:focus,
+  &:hover {
+    border-color: $clr-primary;
+    background-color: $clr-primary;
+
+    .social-media__icon {
+      fill: #fff;
+    }
+  }
+}
+
+.social-media__icon {
+  fill: $clr-primary;
+}
