@@ -3,7 +3,9 @@
 
 // General
 html {
-  font-size: 125%;
+  @media (min-width: 992px) {
+    font-size: 125%;
+  }
 }
 
 body {
