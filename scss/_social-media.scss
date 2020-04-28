@@ -10,12 +10,18 @@ $border-color: #e8ebf4;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 64px;
-  height: 64px;
-  margin: 0 1.25rem;
+  width: 48px;
+  height: 48px;
+  margin: 0 0.75rem;
   border: 1px solid $border-color;
   border-radius: 50%;
   line-height: 0;
+
+  @media (min-width: 576px) {
+    width: 64px;
+    height: 64px;
+    margin: 0 1.25rem;
+  }
 
   &:focus,
   &:hover {
@@ -30,4 +36,9 @@ $border-color: #e8ebf4;
 
 .social-media__icon {
   fill: $clr-primary;
+
+  @media (max-width: 575.98px) {
+    width: 16px;
+    height: 16px;
+  }
 }

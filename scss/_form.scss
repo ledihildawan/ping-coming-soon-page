@@ -3,7 +3,7 @@ $border-color: #c6d3f3;
 .form {
   margin-bottom: 5rem;
 
-  @media (min-width: 992px) {
+  @media (min-width: 576px) {
     display: flex;
     align-items: flex-start;
 
@@ -46,7 +46,11 @@ $border-color: #c6d3f3;
   outline: 0;
   border: 1px solid $border-color;
   border-radius: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
+
+  @media (min-width: 576px) {
+    padding: 1.5rem;
+  }
 
   @media (min-width: 992px) {
     padding: 1rem 1.5rem;
